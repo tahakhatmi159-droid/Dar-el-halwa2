@@ -1,77 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carte des prix — Dar El Halwa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Dar El Halwa</h1>
+    <p>Pâtisserie fine tunisienne depuis 1900</p>
+  </header>
+  <nav id="sommaire" aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html#apropos">À propos</a></li>
+      <li><a href="index.html#produits">Nos produits</a></li>
+      <li><a href="index.html#services">Nos services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="carte.html">Carte des prix</a></li>
+      <li><a href="commande.html">Commander</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="carte-prix">
+      <h2>Carte des prix</h2>
+      <div class="table-defilant">
       <table>
-        <caption>
-          Carte des prix — tarifs au kilogramme, TTC
-        </caption>
+        <caption>Carte des prix — tarifs au kilogramme, TTC</caption>
         <thead>
-          <th scope="col">Catégorie</th>
-          <th scope="col">Produit</th>
-          <th scope="col">Prix(dt)</th>
+          <tr>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Produit</th>
+            <th scope="col">Prix (DT)</th>
+          </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="rowgroup" rowspan="4">Le sucré fin</th>
-            <td>Chocolats</td>
-            <td>45</td>
-          </tr>
-          <tr>
-            <td>Gateaux</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Morceaux</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>Glaces</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <th scope="rowgroup" rowspan="3">Le salé fin</th>
-            <td>Bouchées froides</td>
-            <td>30</td>
-          </tr>
-          <tr>
-            <td>Brochettes</td>
-            <td>70</td>
-          </tr>
-          <tr>
-            <td>Verrines froides</td>
-            <td>100</td>
-          </tr>
-          <tr>
-            <th scope="rowgroup" rowspan="2">Pains & viennoiseries</th>
-            <td>Pains</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Viennoiseries</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <th scope="rowgroup" rowspan="3">L'épicerie fine</th>
-            <td>Confitures</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Miels</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Granola</td>
-            <td>60</td>
-          </tr>
+        <tr>
+          <th scope="rowgroup" rowspan="4">Le sucré fin</th>
+          <td>Chocolats</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>Gâteaux</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Morceaux</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Glaces</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <th scope="rowgroup" rowspan="3">Le salé fin</th>
+          <td>Bouchées froides</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Brochettes</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Verrines froides</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="rowgroup" rowspan="2">Pains &amp; viennoiseries</th>
+          <td>Pains</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Viennoiseries</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th scope="rowgroup" rowspan="3">L'épicerie fine</th>
+          <td>Confitures</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Miels</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Granola</td>
+          <td>60</td>
+        </tr>
         </tbody>
       </table>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h2>Coordonnées</h2>
+      <p>Route de Tunis km 5, Sfax 3044, Tunisie</p>
+      <p>Tél. : <a href="tel:+21674000000">+216 74 000 000</a></p>
+      <p>&copy; 2026 Dar El Halwa</p>
+    </div>
+    <div>
+      <h2>Suivez-nous</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/darelhalwa" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/darelhalwa" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/company/darelhalwa" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Horaires</h2>
+      <p>Samedi – jeudi : 8 h – 20 h</p>
+      <p>Vendredi : 8 h – 12 h</p>
+    </div>
+  </footer>
+</body>
 </html>

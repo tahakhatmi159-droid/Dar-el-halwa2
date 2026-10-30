@@ -1,121 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dar El Halwa — Pâtisserie fine tunisienne</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Dar-el-halwa</h1>
-      <figure>
-        <img src="images/patisserie.jfif" alt="images" />
-        <figcaption>Notre vitrine de mignardises traditionnelles</figcaption>
-      </figure>
+      <h1>Dar El Halwa</h1>
       <p>Pâtisserie fine tunisienne depuis 1900</p>
+      <figure>
+        <img
+          src="images/patisserie.jpg"
+          alt="Vitrine garnie de mignardises, cornes de gazelle et makrouds"
+          width="800"
+          height="450"
+        />
+        <figcaption>Notre vitrine de mignardises traditionnelles.</figcaption>
+      </figure>
     </header>
-    <nav id="sommaire">
+    <nav id="sommaire" aria-label="Navigation principale">
       <ul>
         <li><a href="#apropos">À propos</a></li>
-        <li><a href="#produits">Nos produit</a></li>
+        <li><a href="#produits">Nos produits</a></li>
         <li><a href="#services">Nos services</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="carte.html">Carte des prix</a></li>
+        <li><a href="commande.html">Commander</a></li>
       </ul>
-      <div id="navigation"></div>
     </nav>
     <main>
       <section id="apropos">
         <h2>À propos</h2>
-        <p>
+        <p class="mise-en-avant">
           Un monde magique de gâteries du quotidien et de petits plaisirs de la
-          bouche. Nous proposons une gamme variée de mignardises, pâtisseries
+          bouche.
+        </p>
+        <p>
+          Nous proposons une gamme variée de mignardises, pâtisseries
           traditionnelles, chocolats, macarons sucrés et salés, brochettes et
           verrines.
         </p>
+        <p><a href="#sommaire">↑ Retour au sommaire</a></p>
       </section>
+
       <section id="produits">
         <h2>Nos produits</h2>
-        <ul>
-          <li>
-            <strong>Le sucré fin</strong>
-            <em>(gâteaux, morceaux, bouchées sucrées, glaces)</em>
+        <ul class="grille-produits">
+          <li class="carte">
+            <h3><strong>Le sucré fin</strong></h3>
+            <p><em>Gâteaux, morceaux, bouchées sucrées, glaces.</em></p>
+            <p class="prix">à partir de 4 DT</p>
           </li>
-          <li>
-            <strong>Le salé fin</strong>
-            <em>(bouchées froides, brochettes, verrines froides)</em>
+          <li class="carte">
+            <h3><strong>Le salé fin</strong></h3>
+            <p><em>Bouchées froides, brochettes, verrines froides.</em></p>
+            <p class="prix">à partir de 30 DT</p>
           </li>
-          <li>
-            <strong>Pains & viennoiseries</strong>
-            <em>(pains, viennoiseries)</em>
+          <li class="carte">
+            <h3><strong>Pains &amp; viennoiseries</strong></h3>
+            <p><em>Pains, viennoiseries.</em></p>
+            <p class="prix">à partir de 1 DT</p>
           </li>
-          <li>
-            <strong>L'épicerie fine</strong>
-            <em>(confitures, miels, granola)</em>
+          <li class="carte">
+            <h3><strong>L'épicerie fine</strong></h3>
+            <p><em>Confitures, miels, granola.</em></p>
+            <p class="prix">à partir de 10 DT</p>
           </li>
         </ul>
+        <p><a href="#sommaire">↑ Retour au sommaire</a></p>
       </section>
+
       <section id="services">
         <h2>Nos services</h2>
         <dl>
-          <dt>
-            <strong>Expédition</strong>
-          </dt>
+          <dt>Expédition</dt>
           <dd>
             Nous passons par la Poste tunisienne pour assurer l'expédition vers
             tous les gouvernorats de Tunisie et vers la France.
           </dd>
-        </dl>
-        <dl>
-          <dt><strong>Personnalisation de gâteaux</strong></dt>
+          <dt>Personnalisation de gâteaux</dt>
           <dd>
             Nous proposons la personnalisation des gâteaux d'anniversaire et de
             cérémonie.
           </dd>
-        </dl>
-        <dl>
-          <dt><strong>Conseil</strong></dt>
+          <dt>Conseil</dt>
           <dd>
             Pour toute commande supérieure à 500 DT, une conseillère vous
             contacte par téléphone pour vous orienter.
           </dd>
         </dl>
+        <p><a href="#sommaire">↑ Retour au sommaire</a></p>
       </section>
-      <section id="temoignages,">
+
+      <section id="temoignages">
         <h2>Ils parlent de nous</h2>
-        <h3>Vidéo témoignage</h3>
-        <video src="">
-          <source src="images/temoignage.mp4" type="video" />
+        <video controls preload="metadata">
+          <source src="medias/temoignage.mp4" type="video/mp4" />
+          Votre navigateur ne sait pas lire cette vidéo.
+          <a href="medias/temoignage.mp4">Télécharger la vidéo</a>.
         </video>
-        <h3>Avis de nos clients</h3>
-        <audio>
-          <source src="images/avis-clients.mp3" type="audio" />
-          Votre navigateur ne peut pas lire ce fichier audio
+        <p>Les avis de nos clients :</p>
+        <audio controls preload="metadata">
+          <source src="medias/avis-clients.mp3" type="audio/mpeg" />
+          Votre navigateur ne sait pas lire ce fichier audio.
         </audio>
+        <p><a href="#sommaire">↑ Retour au sommaire</a></p>
       </section>
-      <section id="contact">
+
+      <section id="contact" class="carte-info">
         <h2>Contact</h2>
-        <p>contact nous pour plus d'information</p>
         <ol>
-          <li>address Route de Tunis km 5, Sfax 3044,Tunisie</li>
+          <li>Route de Tunis km 5, Sfax 3044, Tunisie</li>
           <li>
-            Email : <a href="contact@darelhalwa.tn">contact@darelhalwa.tn</a>
+            <a
+              href="mailto:contact@darelhalwa.tn?subject=Demande%20de%20renseignements"
+              >contact@darelhalwa.tn</a
+            >
           </li>
-          <li>Telephone : <a href="+21674000000"></a>+216 74 000 000</li>
-          <li><a href="carte.html">Notre carte</a></li>
+          <li><a href="tel:+21674000000">+216 74 000 000</a></li>
         </ol>
-        <p id="#sommaire">Retour au sommaire</p>
+        <p><a href="#sommaire">↑ Retour au sommaire</a></p>
       </section>
     </main>
     <footer>
-      <p>2026 Dar El Halwa .Tous droits réservés.</p>
-      <div id="reseaux-sociaux">
+      <div>
+        <h2>Coordonnées</h2>
+        <p>Route de Tunis km 5, Sfax 3044, Tunisie</p>
+        <p>Tél. : <a href="tel:+21674000000">+216 74 000 000</a></p>
+        <p>&copy; 2026 Dar El Halwa</p>
+      </div>
+      <div>
+        <h2>Suivez-nous</h2>
         <ul>
-          <li><a href="https://www.facebook.com/darelhalwa">Facebook</a></li>
-          <li><a href="https://www.instagram.com/darelhalwa">Instagram</a></li>
           <li>
-            <a href="https://www.linkedin.com/company/darelhalwa">linkedit</a>
+            <a
+              href="https://www.facebook.com/darelhalwa"
+              target="_blank"
+              rel="noopener"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/darelhalwa"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/darelhalwa"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
           </li>
         </ul>
+      </div>
+      <div>
+        <h2>Horaires</h2>
+        <p>Samedi – jeudi : 8 h – 20 h</p>
+        <p>Vendredi : 8 h – 12 h</p>
       </div>
     </footer>
   </body>
